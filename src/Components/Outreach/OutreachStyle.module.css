@@ -247,7 +247,14 @@
 
 }
 
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+  .cardBody {
+    flex-direction: row;
+  }
+  
+  .section1DivWrapper {
+    width: 23.6rem;
+}
 
 
 @media screen and (min-width: 1300px) {}
