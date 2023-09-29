@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Merriweather:wght@400;700&family=Montserrat:ital,wght@0,100;0,300;0,500;1,100&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+.divider {
+  display: block;
+  height: 4rem;
+  margin-top: -1.6rem;
+  background-image: url("../../images/mobile-about/divider.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  background-color: transparent;
+}
+
+.spanStyle {
+  font-size: 1.15rem;
+}
+
+.mainWrapper {
+  background: linear-gradient(0deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0.5206874986322654) 125%,
+      rgba(2, 0, 36, 0) 100%);
+  padding: 1rem 1rem 0 1rem;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  margin: -.5rem 0 2rem 0 ;
+  background-image: url("../../images/mobile-about/about-background.jpg");
+  background-size: cover;
+}
+
+.cardWrapper {
+  background-color: #102a57;
+  border-radius: 0;
+  border: none;
+  padding: 0rem .5rem 0 .5rem;
+}
+
+.innerCardWrapper {
+  text-align: center;
+  border: 0;
+}
+
+.title,
+.aboutParagraph {
+  font-size: 2.5rem;
+  font-family: "EB Garamond";
+  font-weight: 500;
+  line-height: .8;
+  color: #5d3e63;
+}
+
+.title {
+  margin: 0;
+}
+
+.aboutParagraph {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  font-family: "Didact Gothic";
+  padding: 1rem .5rem;
+  color: #4e5155;
+}
+
+.container {
+  display: none;
+}
+
+@media screen and (min-width:600px) {
+  .divider {
+    margin-top: -1.51rem;
+
+  }
+}
+
+@media screen and (min-width:768px) {
+
+  .cardWrapper {
+    margin-top: 2rem;
+    padding: 0;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .hrStyle {
+    margin: .7rem;
+  }
+
+  .aboutParagraph {
+    padding: 1.5rem;
+    font-size: .99rem;
+  }
+
+  .mainWrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+  }
+
+  .titleImgWrapper {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 56%;
+    margin-top: -1rem;
+  }
+
+  .textAndBtnWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+  }
+
+}
+
+@media screen and (min-width:1024px) {
+
+  .titleImgWrapper {
+    width: 47%;
+    margin: 1rem;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+
+  .spanStyle{
+    font-size: 1.5rem;
+  }
+
+  .aboutParagraph {
+    padding: 1.5rem;
+    font-size: 1.1rem;
+  }
+}
