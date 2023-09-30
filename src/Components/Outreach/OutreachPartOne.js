@@ -47,7 +47,7 @@ const PasterSection = () => {
   const flyerSection1ButtonAndImg = (
     <>
       <Card.Img src={pastorA} className={pastorAImg}></Card.Img>
-      <Button href="/" className={btn}>
+      <Button href="/home" className={btn}>
         REGISTER
       </Button>
     </>
