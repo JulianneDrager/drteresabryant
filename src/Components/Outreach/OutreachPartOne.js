@@ -48,7 +48,7 @@ const PasterSection = () => {
     <>
       <Card.Img src={pastorA} className={pastorAImg}></Card.Img>
       <Button href="/" className={btn}>
-        REGISTER NOW
+        REGISTER
       </Button>
     </>
   );
