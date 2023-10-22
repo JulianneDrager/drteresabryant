@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Merriweather:wght@400;700&family=Montserrat:ital,wght@0,100;0,300;0,500;1,100&family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Six+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@300;400;500&family=Six+Caps&display=swap');
+
 
 .divider {
   display: block;
@@ -16,10 +19,18 @@
   font-size: 1.15rem;
 }
 
+.quoteText {
+  margin: .5rem 0;
+  color: #000000;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
 .mainWrapper {
-  background: linear-gradient(0deg,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 0.5206874986322654) 125%,
+  background: linear-gradient(142deg,
+      rgba(255, 255, 255, 2) 47%,
+      rgba(255, 255, 255, 0.5206874986322654) 71%,
       rgba(2, 0, 36, 0) 100%);
   padding: 1rem 1rem 0 1rem;
 }
@@ -28,17 +39,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
-  margin: -.5rem 0 2rem 0 ;
-  background-image: url("../../images/mobile-about/about-background.jpg");
-  background-size: cover;
+  padding: .5rem;
+  margin: -.5rem 0 2rem 0;
+  background-color: #ffffff;
+  /* background-image: url("../../images/mobile-about/about-background-image.png"); */
+  /* background-size: contain; */
+  background-blend-mode: color-burn;
 }
 
 .cardWrapper {
   background-color: #102a57;
   border-radius: 0;
   border: none;
-  padding: 0rem .5rem 0 .5rem;
 }
 
 .innerCardWrapper {
@@ -48,22 +60,27 @@
 
 .title,
 .aboutParagraph {
-  font-size: 2.5rem;
-  font-family: "EB Garamond";
-  font-weight: 500;
-  line-height: .8;
-  color: #5d3e63;
+  font-family: "Six Caps";
+  font-size: 3.9rem;
+  line-height: 4.8rem;
+  color: #000000;
 }
 
 .title {
   margin: 0;
 }
 
+.subTitle {
+  font-family: "Oswald";
+  margin: 0 0 -.2rem 0;
+  font-size: 1.2rem;
+}
+
 .aboutParagraph {
   font-size: 1rem;
   line-height: 1.2rem;
   font-family: "Didact Gothic";
-  padding: 1rem .5rem;
+  padding: 1rem 0;
   color: #4e5155;
 }
 
@@ -71,10 +88,25 @@
   display: none;
 }
 
+@media screen and (min-width:414px) {
+  .aboutParagraph {
+    padding: 1rem;
+  }
+}
+
 @media screen and (min-width:600px) {
   .divider {
     margin-top: -1.51rem;
+  }
 
+  .aboutParagraph {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+  }
+
+  .title {
+    font-size: 5rem;
+    margin: 0 0 1rem 0;
   }
 }
 
@@ -93,19 +125,24 @@
     margin: .7rem;
   }
 
+  .quoteText {
+    font-size: .9rem;
+  }
+
   .aboutParagraph {
-    padding: 1.5rem;
+    padding: 0 0 1rem 1.2rem;
     font-size: .99rem;
   }
 
   .mainWrapper {
     display: flex;
     flex-direction: row;
+    background: linear-gradient(142deg, rgba(255, 255, 255, 2) 47%, rgba(255, 255, 255, 118.520687) 71%, rgba(2, 0, 36, 0) 136%);
   }
 
   .title {
-    font-size: 2.5rem;
-    margin-top: 1rem;
+    font-size: 4rem;
+    margin-top: -.3rem;
   }
 
   .titleImgWrapper {
@@ -113,7 +150,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 56%;
+    width: 150%;
     margin-top: -1rem;
   }
 
@@ -121,28 +158,64 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
+    width: 149%;
   }
 
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1022px) {
 
   .titleImgWrapper {
-    width: 47%;
+    width: 150%;
     margin: 1rem;
   }
 
   .title {
-    font-size: 4rem;
+    font-size: 6rem;
+    margin: 1.7rem 0 2rem 0;
   }
 
-  .spanStyle{
+  .subTitle {
+    font-size: 2.2rem;
+  }
+
+  .spanStyle {
     font-size: 1.5rem;
   }
 
   .aboutParagraph {
     padding: 1.5rem;
+    font-size: 1.3rem;
+  }
+
+  .quoteText {
     font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .title {
+    font-size: 7rem;
+    margin: 2.7rem 0 2rem 0;
+  }
+
+  .subTitle {
+    font-size: 3.2rem;
+  }
+
+  .aboutParagraph{
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  .quoteText {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media screen and (min-width:1400px) {
+  .aboutParagraph{
+    padding: 3.2rem;
   }
 }

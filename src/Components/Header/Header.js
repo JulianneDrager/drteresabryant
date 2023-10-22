@@ -1,8 +1,8 @@
 import React from "react";
 import HeaderStyle from "./Header.module.css";
 import { Col, Row, Image } from "react-bootstrap";
-import HeaderPic from "../../images/mobile-header/mobile-header-image.jpg";
-import HeaderDesktopPic from "../../images/desktop-header/desktop-header-image.jpg"
+import HeaderPic from "../../images/mobile-header/mobile-header-image-rev.jpg";
+import HeaderDesktopPic from "../../images/desktop-header/desktop-header-image-rev.jpg"
 import { useMediaQuery } from "@mui/material";
 
 const Header = () => {
@@ -11,7 +11,6 @@ const Header = () => {
 
   return (
     <>
-    {/* mobile view port */}
       { matchSm && (
         <Row id="header">
           <Col>
@@ -20,7 +19,6 @@ const Header = () => {
         </Row>
       )}
 
-    {/* desktop view port */}
       {!matchSm && (
         <Row id="header">
           <Col>

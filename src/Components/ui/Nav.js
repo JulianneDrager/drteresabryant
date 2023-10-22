@@ -18,7 +18,9 @@ const Navigation = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/tmp/communityoflove2022/#home">Home</Nav.Link>
+              <Nav.Link href="/">Home</Nav.Link>
+              <Nav.Link href="#bad-girls">Bad Girls 2023</Nav.Link>
+              <Nav.Link href="mailto:drteresabryant@gmail.com">Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

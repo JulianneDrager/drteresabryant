@@ -1,8 +1,8 @@
 {
-  "name": "drteresajbryant.com",
+  "name": "teresabryant.com",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://glorydesigner.com/tmp/drteresajbryant.com",
+  "homepage": "https://teresabryant.com",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@emotion/react": "^11.11.1",
