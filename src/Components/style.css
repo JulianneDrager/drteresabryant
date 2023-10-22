@@ -15,12 +15,38 @@
 
 
 
+.react-multiple-carousel__arrow {
+    background-color: transparent !important;
+
+}
+
+.carousel.carousel-slider .control-arrow {
+    padding: 75px !important;
+}
+
+.carousel.carousel-slider .control-arrow:hover {
+    background-color: transparent !important;
+}
+
+.carousel .control-next.control-arrow:before {
+    border-left: 8px solid transparent !important;
+}
+
+.carousel .control-prev.control-arrow:before {
+    border-right: 8px solid transparent !important;
+}
+
+
 .nav-link {
     color: white !important
 }
 
 .navbar-toggler {
-    background-color: #8f9ba2;
+    background-color: #34003d;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
 }
 
 .card {
@@ -37,7 +63,12 @@
 }
 
 .form-check input:hover {
-    background-color: #8c062f;
+    background-color: #000000;
+}
+
+.form-check-input:checked {
+    background-color: #2b4c85;
+    border-color: #2b4c85;
 }
 
 .form-check label {

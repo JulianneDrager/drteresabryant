@@ -5,6 +5,7 @@ import { Card, Button } from "react-bootstrap";
 
 const RegisterButton = () => {
   const learnMoreCard = LearnMoreStyle.learnMoreCard;
+  const subText = LearnMoreStyle.subText;
   const btn = LearnMoreStyle.btn;
 
   return (

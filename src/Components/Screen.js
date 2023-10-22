@@ -4,6 +4,9 @@ import Nav from "./ui/Nav";
 import Header from "./Header/Header";
 import About from "./About/About";
 import OutreachPartOne from "./Outreach/OutreachPartOne";
+import PrayerAndTestimonials from "./PrayerAndTestimony/PrayerAndTestimonials";
+import ContactContainer from "./Contact/ContactContainer";
+import Footer from "./Footer/Footer"
 
 
 const Screen = () => {
@@ -24,6 +27,10 @@ const Screen = () => {
         <Header />
           <About />
             <OutreachPartOne />
+            <PrayerAndTestimonials />
+            <ContactContainer />
+            <Footer/>
+
       </Container>
     </>
   );

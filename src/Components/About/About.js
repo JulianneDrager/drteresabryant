@@ -1,47 +1,78 @@
 import React from "react";
 import AboutStyle from "./AboutStyle.module.css";
 import LearnMoreButton from "./LearnMoreButton";
-import profileImg from "../../images/mobile-about/mobile-family-fued.jpg";
+import GalleryAbout from "./GalleryAbout";
+import NewsDayLogo from "../../images/mobile-about/newday-logo.png";
 import { useMediaQuery } from "@mui/material";
-import { Card } from "react-bootstrap";
+import { Card, Image } from "react-bootstrap";
 
 const About = () => {
   const cardWrapper = AboutStyle.cardWrapper;
+
   const innerCardWrapper = AboutStyle.innerCardWrapper;
   const cardBody = AboutStyle.cardBody;
-  const musicTitle = AboutStyle.musicTitle;
+  const quoteText = AboutStyle.quoteText;
   const aboutParagraph = AboutStyle.aboutParagraph;
   const title = AboutStyle.title;
+  const subTitle = AboutStyle.subTitle;
   const mainWrapper = AboutStyle.mainWrapper;
   const titleImgWrapper = AboutStyle.titleImgWrapper;
   const textAndBtnWrapper = AboutStyle.textAndBtnWrapper;
   const hrStyle = AboutStyle.hrStyle;
   const spanStyle = AboutStyle.spanStyle;
   const divider = AboutStyle.divider;
+  const backgroundImageAbout = AboutStyle.backgroundImageAbout;
   const matchSm = useMediaQuery("(max-width: 765px)");
 
   const aboutContent = (
     <>
-      <p className={title}>Welcome</p>
-      <Card.Text className={aboutParagraph}>
-        <span className={spanStyle}>
-          My Name is Dr. Teresa Bryant, my passion is your passion. To be heard,
-          to be the change.
+      <div className={aboutParagraph}>
+        <p className={subTitle}>Introducing</p>
+        <p className={title}>Dr Teresa J. Bryant</p>
+        <span>
+          A woman of business, integrity, honor, honesty, and compassion and an
+          exemplary Renaissance woman who possesses the heart and mind of God.
         </span>
-        <hr className={hrStyle}/>
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-        ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-        qui officia deserunt mollit anim id est laborum.
-      </Card.Text>
+        <hr className={hrStyle} />
+        Dr Teresa Bryant is a woman that wears many hats, she is a business
+        owner, counselor, author, paster, nurse, professional caregiver, career
+        coach, public speaker, radio show host, conference organizer. community
+        advocate, a wife, mother, and a grandmother.
+        <p className={quoteText}>
+          " I have always been a go-getter. If there is a problem, I want to fix
+          it. If there is a need, I want to fill it, If there is a goal I want
+          to reach it "
+          <span
+            style={{
+              color:"#02315b",
+            }}
+          >
+            - "Women in Business",{" "}
+            <Image
+              src={NewsDayLogo}
+              alt="news day logo"
+              style={{ width: "94px" }}
+            />
+            {" "}Special Feature
+          </span>
+        </p>
+        Serving the under-served Teresa Bryant has touched thousands of lives
+      </div>
     </>
   );
 
   const imageContent = (
-    <div className={titleImgWrapper}>
-      <Card.Img src={profileImg} className={musicTitle} />
-    </div>
+    <div className={titleImgWrapper}>{<GalleryAbout />}</div>
+  );
+
+  const comingSoonContent = (
+    <>
+      <span className={spanStyle}>Coming Soon</span>
+      <p className={title}>TeresaBryant.com</p>
+      <Card.Text className={aboutParagraph}>
+        <hr className={hrStyle} />
+      </Card.Text>
+    </>
   );
 
   return (
@@ -51,16 +82,17 @@ const About = () => {
         <Card className={cardWrapper}>
           <Card className={innerCardWrapper}>
             <Card.Body className={cardBody}>
-
               {/* for mobile view port -----------*/}
               {matchSm && (
                 <div>
                   <div className={mainWrapper}>
+                    {/* {comingSoonContent} */}
                     {imageContent}
                     <br />
                     {aboutContent}
+
                     <div className={textAndBtnWrapper}>
-                      <LearnMoreButton />
+                      {/* <LearnMoreButton /> */}
                     </div>
                   </div>
                 </div>
@@ -69,11 +101,14 @@ const About = () => {
               {/* for desktop view port ---------*/}
               {!matchSm && (
                 <div>
-                  <div className={mainWrapper}>
-                    {imageContent}
-                    <div className={textAndBtnWrapper}>
-                      {aboutContent}
-                      <LearnMoreButton />
+                  <div className={backgroundImageAbout}>
+                    <div className={mainWrapper}>
+                      {imageContent}
+                      <div className={textAndBtnWrapper}>
+                        {aboutContent}
+                        {/* {comingSoonContent} */}
+                        {/* <LearnMoreButton /> */}
+                      </div>
                     </div>
                   </div>
                 </div>

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@600&display=swap');
+
 
 *p {
   font-family: arial black, arial-w01-black, arial-w02-black, arial-w10 black,
@@ -17,8 +20,13 @@ a {
   color: #e1872d;
 }
 
+.subText {
+  font-family: "Didact Gothic";
+  margin-bottom: 0;
+}
+
 .btn {
-  background-color: #5d3e63;
+  background-color: #102a57;
   font-family: arial;
   border: none;
   text-transform: uppercase;
@@ -29,7 +37,7 @@ a {
 }
 
 .btn:hover {
-  background-color: #d1a31a;
+  background-color: #284981;
   border: none;
   color: #ffffff;
   /* transform: scale(80%); */
