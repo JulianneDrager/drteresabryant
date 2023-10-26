@@ -20,6 +20,8 @@ import Six from "../../images/mobile-about/groups/7.jpg";
 import Seven from "../../images/mobile-about/groups/8.jpg";
 import Eight from "../../images/mobile-about/groups/9.jpg";
 import Nine from "../../images/mobile-about/groups/10.jpg";
+import Ten from "../../images/mobile-about/groups/11.jpg";
+import Eleven from "../../images/mobile-about/groups/12.jpg";
 
 const GalleryAbout = () => {
 //   const pStyle = TestimonyStyle.pStyle;
@@ -90,6 +92,12 @@ const GalleryAbout = () => {
       </div>
       <div>
         <Image src={Nine} />
+      </div>
+      <div>
+        <Image src={Ten} />
+      </div>
+      <div>
+        <Image src={Eleven} />
       </div>
     </Carousel>
   );
